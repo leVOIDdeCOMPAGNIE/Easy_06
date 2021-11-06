@@ -1,0 +1,38 @@
+.tastes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $violet;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+
+    @include laptop {
+        grid-template-columns: 100%;
+    }
+
+    @include wideMobile {
+        width: calc(100% - 40px);
+    }
+
+    &__image {
+        width: calc(100% - 100px);
+        grid-column: 2;
+        grid-row: 1;
+        z-index: 0;
+        justify-self:flex-end;
+        padding: 90px 100px 90px 0;
+
+        @include laptop {
+            width: calc(100% - 100px);
+            justify-self:flex-start;
+            grid-column: 1;
+            grid-row: 3;
+            padding: 60px 0 60px 60px;
+        }
+
+        @include wideMobile {
+            width: calc(100% - 40px);
+            padding: 50px 20px 20px 20px;
+        }
+        
+    }
+}

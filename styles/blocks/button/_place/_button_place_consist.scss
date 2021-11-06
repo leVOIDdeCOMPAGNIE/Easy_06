@@ -1,0 +1,17 @@
+.button_place_consist {
+    width: 163px;
+    height: 55px;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: flex-end;
+    margin: 0 0 90px 100px;
+
+    @include laptop {
+        grid-row: 4;
+        margin: 0 0 60px 60px;
+    }
+
+    @include mobile {
+        margin: 0 0 20px 20px;
+    }
+}

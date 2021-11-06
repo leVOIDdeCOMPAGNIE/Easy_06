@@ -1,0 +1,144 @@
+.header{
+    display: grid;
+    grid-template-columns: 833px 1fr;
+    grid-auto-rows: auto;
+    column-gap: 100px;
+    position: relative;
+    background-color: $violet;
+    overflow: hidden;
+
+    @include laptop {
+        grid-template-columns: 100%;
+    }
+
+    @include tablet {
+       
+    }
+
+    &__logo {
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: flex-start;
+        font-family: Inter, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $yellow;
+        margin: 0;
+        padding: 40px 0 0 50px;
+
+        @include wideMobile {
+            font-size: 20px;
+            padding: 20px 0 0 20px;
+        }
+    }
+
+    &__circle {
+        position: absolute;
+        top: -178px;
+        right: -154px;
+        z-index: 0;
+        border-radius: 50%;
+        width: 565px;
+        height: 565px;
+        background: hsl(241, 100%, 59%);
+        opacity: 0.2;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__image {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: flex-end;
+        padding: 50px 50px 28px 0;
+        z-index: 2;
+
+        @include laptop {
+            grid-column: 1;
+        }
+
+        @include tablet {
+            width: 128px;
+            padding: 40px 50px 28px 0;
+        }
+
+        @include wideMobile {
+            width: 94px;
+            padding: 20px 20px 0 0;
+        }
+    }
+
+    &__photo {
+        grid-column: 1;
+        grid-row: 1/2;
+        z-index: 1;
+        width: calc(100% - 50px);
+        padding: 110px 0 50px 50px;
+
+        @include laptop {
+            width: calc(100% - 100px);
+            padding: 196px 0 50px 50px;
+        }
+
+        @include wideMobile {
+            width: calc(100% - 40px);
+            padding: 100px 0 50px 20px;
+        }
+    }
+
+    &__photo-sticker {
+        position: absolute;
+        top: 600px;
+        left: 734px;
+        z-index: 1;
+
+        @include tablet {
+            top: 538px;
+            left: 547px;
+        }
+        @include wideMobile {
+            width: 83px;
+            top: 268px;
+            left: 214px;
+        }
+    }
+
+    &__title {
+        grid-column: 2;
+        grid-row: 1;
+        z-index: 1;
+        align-self: center;
+        font-family: Inter, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        color: $white;
+        margin: 0;
+
+        @include laptop {
+            align-self: flex-start;
+            max-width: 407px;
+            grid-column: 1;
+            grid-row: 3;
+            padding: 0 0 50px 50px;
+        }
+
+        @include tablet {
+            font-size: 30px;
+            line-height: 38px;
+        }
+
+        @include wideMobile {
+            font-size: 20px;
+            line-height: 24px;
+            padding: 0 0 30px 20px;
+        }
+    }
+}

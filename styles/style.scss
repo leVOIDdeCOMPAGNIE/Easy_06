@@ -1,0 +1,74 @@
+@import '../vendor/normalize.css';
+@font-face {
+    font-family: 'Inter';
+    src: url(../vendor/Inter/static/Inter-Black.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../vendor/Inter/static/Inter-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../vendor/Inter/static/Inter-ExtraBold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: bolder;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../vendor/Inter/static/Inter-ExtraLight.ttf) format('truetype');
+    font-style: normal;
+    font-weight:lighter;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../vendor/Inter/static/Inter-Light.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../vendor/Inter/static/Inter-Medium.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../vendor/Inter/static/Inter-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../vendor/Inter/static/Inter-SemiBold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../vendor/Inter/static/Inter-Thin.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../vendor/Inter/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+}
+@import './variables/screens';
+@import './variables/colors';
+@import './variables/mixins';
+@import './blocks/page';
+@import './blocks/button/button';
+@import './blocks/button/_place/button_place_header';
+@import './blocks/button/_place/button_place_consist';
+@import './blocks/button/_place/button_place_samples';
+@import './blocks/header';
+@import './blocks/running-line';
+@import './blocks/about';
+@import './blocks/tastes';
+@import './blocks/consist';
+@import './blocks/samples';
+@import './blocks/footer';

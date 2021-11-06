@@ -1,0 +1,121 @@
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $darkViolet;
+
+    &__logo {
+        padding: 100px 247px 100px 150px;
+
+        @include laptop {
+            padding: 120px 100px 150px 50px;
+        }
+
+        @include tablet {
+            width: 200px;
+            height: 200px;
+        }
+
+        @include wideMobile {
+            padding: 60px 60px 0 60px;
+        }
+
+    }
+
+    @include wideMobile {
+        flex-direction: column;
+    }
+
+    &__text{
+        max-width: 42%;
+        align-self: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 100px 0 0 0;
+
+        @include laptop {
+            max-width: 50%;
+            padding: 120px 0 0 0;
+        }
+
+        @include wideMobile {
+            flex-direction: column;
+            max-width: calc(100% - 40px);
+            margin: 0 auto;
+            padding: 50px 0 20px 0;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        padding: 0 145px 0 0;
+
+        @include tablet {
+            padding: 0 96px 0 0;
+        }
+
+        @include wideMobile {
+            padding: 0;
+            align-items: center;
+        }
+    }
+
+    &__heading{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 33px;
+        color: $white;
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+
+    &__nav-link{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        color: $white;
+        text-decoration: none;
+    }
+
+    &__nav-link:hover {
+        color: hsla(0, 0%, 100%, 0.7);
+    }
+
+    &__contacts{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        @include wideMobile{
+            text-align: center;
+            padding: 50px 0 0 0;
+        }
+    }
+
+    &__contact-item{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        color: $white;
+    }
+
+    &__copyrights{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 0.3px;
+        color: $white;
+        padding: 142px 0 0 0;
+
+        @include wideMobile{
+            padding: 50px 0 0 0;
+        }
+    }
+}

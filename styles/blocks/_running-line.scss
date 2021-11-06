@@ -1,0 +1,39 @@
+.running-line{
+    display: flex;
+    align-items: center;
+    height: 76px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: hsl(76, 88%, 68%);
+
+    @include mobile {
+        height: 64px;
+    }
+
+    &__text {
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #016450;
+        animation: slide 5s 0s infinite normal;
+        
+        @include wideMobile {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+
+    @keyframes slide {
+        0%   { transform: translate(0%); }
+        50% { transform: translate(-25%); }
+        100% { transform: translate(0%); }
+    }
+}
