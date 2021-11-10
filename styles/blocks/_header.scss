@@ -122,18 +122,18 @@
         text-transform: uppercase;
         color: $green;
         animation: slide 10s cubic-bezier(0, 0, 1, 1) infinite;
-        
+
         @include wideMobile {
             font-size: 20px;
             line-height: 24px;
         }
-    
+
         @keyframes slide {
             0% { transform: translateX(0);}
             100% { transform: translateX(-33%);}
         }
     }
-    
+
     &__running-line:hover {
         animation-play-state: paused;
         background-color: $yellow;

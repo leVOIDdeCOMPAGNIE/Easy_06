@@ -29,7 +29,7 @@
         font-size: 60px;
         line-height: 65px;
         letter-spacing: 0.3px;
-        color: #1E3264; 
+        color: $darkBlue;
         margin: 0;
         padding: 0 0 48px 0;
 
@@ -39,7 +39,7 @@
             padding: 0 0 20px 0;
         }
     }
-    
+
     &__subtitle {
         max-width: 457px;
         font-style: normal;
@@ -83,7 +83,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
+
     &__input-holder {
         border: none;
         width: 310px;
