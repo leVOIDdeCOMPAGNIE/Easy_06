@@ -1,0 +1,19 @@
+.button {
+    border-style: none;
+    cursor: pointer;
+    border-radius: 0px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 0.3px;
+    background: $yellow;
+    color: $darkBlue;
+}
+
+.button:hover {
+    border: 2px solid $darkBlue;
+    box-sizing: border-box;
+    border-radius: 10px;
+}

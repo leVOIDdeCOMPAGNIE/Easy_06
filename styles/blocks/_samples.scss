@@ -1,0 +1,162 @@
+.samples {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: $lime;
+
+    @include laptop {
+        flex-direction: column;
+    }
+
+    &__row{
+        padding: 0 0 0 150px;
+
+        @include laptop {
+            padding: 60px 0 0 60px;
+        }
+
+        @include mobile {
+            align-self:flex-start;
+            padding: 20px 0 0 20px;
+        }
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 65px;
+        letter-spacing: 0.3px;
+        color: $darkBlue;
+        margin: 0;
+        padding: 0 0 48px 0;
+
+        @include mobile {
+            font-size: 20px;
+            line-height: 24px;
+            padding: 0 0 20px 0;
+        }
+    }
+
+    &__subtitle {
+        max-width: 457px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 29px;
+        letter-spacing: 0.3px;
+        color: $darkBlue;
+        margin: 0;
+
+        @include mobile {
+            font-size: 14px;
+            line-height: 19px;
+            max-width: 240px;
+        }
+    }
+
+    &__form-holder{
+        box-sizing: border-box;
+        flex: 1 1 auto;
+        max-width: 693px;
+        display: flex;
+        flex-direction: column;
+        background: $green;
+        padding: 24px 30px 30px 30px;
+        margin: 60px 50px 60px 0;
+
+        @include laptop {
+            width: calc(100% - 68px);
+            margin: 100px auto 34px auto;
+        }
+
+        @include mobile {
+            width: calc(100% - 20px);
+            margin:50px auto 10px auto;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__input-holder {
+        border: none;
+        width: 310px;
+        margin: 0;
+        padding: 0;
+
+        @include laptop {
+            width: 100%;
+        }
+    }
+
+    &__input-holder:last-of-type {
+        width: 633px;
+
+        @include laptop {
+            width: 100%;
+        }
+    }
+
+    &__form-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 40px;
+        color: $white;
+        margin: 0 0 50px 0;
+
+        @include mobile {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 31px;
+        letter-spacing: 0.3px;
+        color: $white;
+        margin: 0;
+
+        @include mobile {
+            font-size: 14px;
+        }
+    }
+
+    &__form-input {
+        box-sizing: border-box;
+        width: 100%;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 31px;
+        letter-spacing: 0.3px;
+        color: $white;
+        border: 0;
+        border-bottom: 2px solid $white;
+        background-color: transparent;
+        margin: 0 0 12px 0;
+        padding: 0 0 13px 0;
+
+        @include mobile{
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    &__form-input:focus {
+        outline: none;
+    }
+    &__form-input:hover {
+        cursor: pointer;
+
+    }
+}

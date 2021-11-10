@@ -1,0 +1,25 @@
+.button_place_samples {
+    background: $violet;
+    color: $white;
+    width: 158px;
+    height: 55px;
+    justify-self: flex-end;
+    margin: 179px 0 0 0;
+
+    @include laptop {
+        margin: 90px 0 0 0;
+    }
+
+    @include mobile {
+        font-size: 16px;
+        line-height: 31px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        width: 100%;
+        margin: 60px 0 0 0;
+    }
+}
+
+.button_place_samples:hover {
+    border: 2px solid $lime;
+}

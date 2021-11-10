@@ -1,0 +1,129 @@
+.about {
+    position: relative;
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: $darkBlue;
+        margin: 0 auto;
+        padding: 120px 0 120px 0;
+
+        @include wideMobile {
+            font-size: 20px;
+            line-height: 24px;
+            padding: 50px 0 50px 0;
+        }
+
+    }
+
+    &__description {
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 70px auto 0 auto;
+
+        @include laptop {
+            width: calc(100% - 100px);
+        }
+
+        @include tablet {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        @include wideMobile {
+            width: calc(100% - 40px);
+        }
+    }
+
+    &__title {
+        max-width: 460px;
+        align-self: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 67px;
+        letter-spacing: 0.3px;
+        color: $darkBlue;
+        margin: 0;
+
+        @include tablet {
+            text-align: center;
+            padding: 120px 0 120px 0;
+        }
+
+        @include wideMobile {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.3px;
+            padding: 50px 0 50px 0;
+        }
+    }
+
+    &__sticker {
+        display: none;
+        width: 172px;
+        height: 172px;
+        position: absolute;
+        top: 92px;
+        right: -100px;
+        z-index: 1;
+
+        @include laptop {
+            top: 190px;
+            right: 230px;
+        }
+    }
+
+    &__photo {
+        max-width: 430px;
+        max-height: 610px;
+        object-fit: cover;
+        
+        @include wideMobile {
+            max-width: 100%;
+        }
+    }
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    right: 520px;
+    bottom: 957px;
+    width: 172px;
+    height: 172px;
+    transform: rotate(-18.99deg);
+    background-image: url('/Users/soniagaspard/Documents/Easy_06/images/about/stickerMango.png');
+    background-size: 172px;
+
+    @include laptop {
+        right: 433px;
+        bottom: 1345px;
+    }
+
+    @include tablet {
+        right: 495px;
+        bottom: 1233x;
+    }
+
+    @include wideMobile {
+        right: 47px;
+        bottom: 1233px;
+        width: 99px;
+        height: 99px;
+        background-size: 99px;
+    }
+
+    @include mobile {
+        right: 190px;
+        bottom: 770px;
+    }
+}
