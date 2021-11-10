@@ -11,10 +11,6 @@
         grid-template-columns: 100%;
     }
 
-    @include tablet {
-       
-    }
-
     &__logo {
         grid-column: 1;
         grid-row: 1;
@@ -33,22 +29,6 @@
         @include wideMobile {
             font-size: 20px;
             padding: 20px 0 0 20px;
-        }
-    }
-
-    &__circle {
-        position: absolute;
-        top: -178px;
-        right: -154px;
-        z-index: 0;
-        border-radius: 50%;
-        width: 565px;
-        height: 565px;
-        background: hsl(241, 100%, 59%);
-        opacity: 0.2;
-
-        @include tablet {
-            display: none;
         }
     }
 
@@ -75,6 +55,8 @@
     }
 
     &__photo {
+        max-width: 783px;
+        max-height: 600px;
         grid-column: 1;
         grid-row: 1/2;
         z-index: 1;
@@ -89,23 +71,6 @@
         @include wideMobile {
             width: calc(100% - 40px);
             padding: 100px 0 50px 20px;
-        }
-    }
-
-    &__photo-sticker {
-        position: absolute;
-        top: 600px;
-        left: 734px;
-        z-index: 1;
-
-        @include tablet {
-            top: 538px;
-            left: 547px;
-        }
-        @include wideMobile {
-            width: 83px;
-            top: 268px;
-            left: 214px;
         }
     }
 
@@ -141,4 +106,95 @@
             padding: 0 0 30px 20px;
         }
     }
+
+    &__running-line {
+        grid-row: 5;
+        width: fit-content;
+        background-color: $lime;
+        margin: 0;
+        padding: 20px 0;
+        white-space: nowrap;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $green;
+        animation: slide 10s cubic-bezier(0, 0, 1, 1) infinite;
+        
+        @include wideMobile {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    
+        @keyframes slide {
+            0% { transform: translateX(0);}
+            100% { transform: translateX(-33%);}
+        }
+    }
+    
+    &__running-line:hover {
+        animation-play-state: paused;
+        background-color: $yellow;
+        color: $white;
+        text-shadow: 2px 2px 1px $green;
+        cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+    }
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: -160px;
+    right: -160px;
+    z-index: 0;
+    border-radius: 50%;
+    width: 565px;
+    height: 565px;
+    background: hsl(241, 100%, 59%);
+    opacity: 0.2;
+    @include tablet {
+        display: none;
+    }
+}
+
+.header::after {
+    content: '';
+    display: block;
+    background-image: url('/Users/soniagaspard/Documents/Easy_06/images/header/stickerPineapple.png');
+    background-repeat: no-repeat;
+    background-size: 145px;
+    width: 145px;
+    height: 145px;
+    position: absolute;
+    top: 601px;
+    left: 737px;
+    z-index: 1;
+    transform: rotate(10.05deg);
+
+    @include laptop {
+        top: 561px;
+        left: 566px;
+    }
+
+    @include tablet {
+        top: 544px;
+        left: 549px;
+    }
+    @include wideMobile {
+        width: 83px;
+        height: 80px;
+        background-size: 80px;
+        top: 430px;
+        left: 470px;
+    }
+
+    @include mobile {
+        top: 262px;
+        left: 199px;
+    }
+
+
+
 }

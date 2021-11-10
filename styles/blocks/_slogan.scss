@@ -1,0 +1,23 @@
+.slogan {
+    max-width: 386px;
+    align-self: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 0.3px;
+    color: $white;
+    opacity: 0.8;
+    margin: 0;
+    padding: 30px 0 0 100px;
+
+    @include laptop {
+        padding: 30px 0 0 60px;
+    }
+
+    @include wideMobile {
+        font-size: 14px;
+        line-height: 19px;  
+        padding: 14px 20px 0 20px;
+    }
+}

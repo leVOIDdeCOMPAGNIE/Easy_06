@@ -47,7 +47,7 @@
         font-size: 20px;
         line-height: 29px;
         letter-spacing: 0.3px;
-        color: #1E3264;
+        color: $darkBlue;
         margin: 0;
 
         @include mobile {
@@ -85,7 +85,10 @@
     }
     
     &__input-holder {
+        border: none;
         width: 310px;
+        margin: 0;
+        padding: 0;
 
         @include laptop {
             width: 100%;

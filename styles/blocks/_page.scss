@@ -1,9 +1,5 @@
 .page{
+    max-width: 1440px;
     font-family: Inter, sans-serif;
     background-color: $white;
-
-    &__section {
-        max-width: 1440px;
-    }
-
 }
